@@ -23,11 +23,10 @@ public class Main {
         double tipPerPerson = tipTotal / numPeople; // the total tip divided by the number of people
         double billPerPerson = billWithTip / numPeople; // the total bill divided by the number of people
 
-        System.out.println("Total tip amount: $" + tipTotal);
-        System.out.println("Total bill cost: $" + billWithTip);
-        System.out.println("Tip per person: $" + tipPerPerson);
-        System.out.println("Total bill per person: $" + billPerPerson);
-
-
+        System.out.printf("Total tip amount: $%.2f\n" , tipTotal);
+        System.out.printf("Total bill cost: $%.2f\n" , billWithTip);
+        System.out.printf("Tip per person: $%.2f\n" , tipPerPerson);
+        System.out.printf("Total bill per person: $%.2f\n" , billPerPerson);
+        // I used printf to format it so the value is rounded to two decimal places and it's a new line
     }
 }
